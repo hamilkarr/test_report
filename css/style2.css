@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+/** 공통 */
+* {
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  font-size: 13px; /* 1rem - 13px */
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 본문 시작 */
+
+.body_container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  height: 25pt;
+  background-color: #321911;
+  position: sticky;
+  top: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .top_nav_item {
+  color: white;
+  flex-shrink: 0;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1.5px solid white;
+  flex-grow: 0;
+}
+
+.top_nav_container .top_nav_item:last-child {
+  border-right: none;
+  margin-right: 8vh;
+}
+
+/* 메인 시작 */
+
+.middle_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.middle_container section h4 {
+  text-align: center;
+}
+
+.middle_container section .review_photo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.middle_container section .review_photo div {
+  width: 75px;
+  height: 100px;
+  background-color: powderblue;
+}
+
+main {
+  flex-shrink: 1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+main .best_seller_container {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+main article dl {
+  margin: 0;
+}
+
+main article .goods_img {
+  width: 210px;
+  height: 210px;
+  margin: 10px;
+  background-color: powderblue;
+}
+
+/* 메인 사이드바 시작 */
+
+aside {
+  flex-basis: 15%;
+  flex-shrink: 0;
+  margin-left: 8vh;
+}
+aside .side_goods_category {
+  background-color: #a98274;
+  padding: 7px 0;
+  position: sticky;
+  top: 33px;
+}
+
+.side_goods_category a {
+  color: white;
+  padding-left: 13px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* footer 시작 */
+footer {
+}
