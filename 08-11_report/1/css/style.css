@@ -1,0 +1,87 @@
+body {
+  background-color: cornflowerblue;
+}
+.hidden {
+  display: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+#clock {
+  font-size: 2rem;
+  margin: 10% 0 0 0;
+  text-align: center;
+}
+#greeting {
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.xi-check {
+  margin: 0 10px 0 20px;
+}
+#todo-form input {
+  padding-bottom: 10px;
+  margin-top: 5%;
+}
+
+#todo-form input,
+#dday-form input {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  text-align: center;
+}
+
+#todo-form input::placeholder,
+#dday-form input::placeholder {
+  color: white;
+}
+
+#todo-form input:focus,
+#dday-form input:focus {
+  outline: none;
+}
+
+#dday-form:after {
+  display: block;
+  content: "";
+  clear: left;
+}
+
+#dday-form input {
+  margin-left: 10px;
+  float: left;
+  font-size: 0.5rem;
+  width: calc(20% / 4);
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+div {
+  font-size: 0.6rem;
+  font-weight: bolder;
+  width: calc(25%);
+  text-align: center;
+}
